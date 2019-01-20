@@ -34,6 +34,19 @@
         }
           document.getElementById("menu_item").innerHTML = response;
       }
+
+      function getCustomerName() {
+        var response;
+        var custName = prompt("Enter menu item: ", "Mushroom Flatbread");
+
+        if(custName === null || custName === ""){
+          response = "menuEntry was null or void";
+        } else {
+          response = "Did you order the " + custName + "?";
+        }
+          document.getElementById("menu_item").innerHTML = response;
+      }
+
     </script>
 
 
