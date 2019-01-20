@@ -1,6 +1,19 @@
 // import React from 'react'
 // import ReactDOM from 'react-dom'
 // import './index.css';
+
+function getMenuItem() {
+  var response;
+  var menuEntry = prompt("Enter menu item: ", "Mushroom Flatbread");
+
+  if(menuEntry === null || menuEntry === ""){
+    response = "menuEntry was null or void";
+  } else {
+    response = "Did you order the " + menuEntry + "?";
+  }
+    document.getElementById("menu_item").innerHTML = response;
+}
+
 // //
 // // function getMenuItem() {
 // //   var response;
