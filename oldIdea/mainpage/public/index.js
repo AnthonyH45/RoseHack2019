@@ -63,7 +63,7 @@ function getPhoneNumber(){
 function sendOrder(){
   // var temp = prompt("Sent!");
   const MongoClient = require('mongodb').MongoClient;
-  const uri = "mongodb+srv://test:<password@cluster0-mkrb4.mongodb.net/test?retryWrites=true";
+  const uri = "mongodb+srv://test:test123@cluster0-mkrb4.mongodb.net/test?retryWrites=true";
   const client = new MongoClient(uri, { useNewUrlParser: true });
   client.connect(err => {
     const collection = client.db("bytesOrders").collection("orders").insert([{"menu_item":menu_item,"customer_name":custName,"done":done,"qty":qty,"comments":comments,"phone_number":phone_number}]);
