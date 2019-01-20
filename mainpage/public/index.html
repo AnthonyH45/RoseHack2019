@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--<script src="../src/index.js">test</script>-->
+    <script src="index.js">test</script>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
@@ -20,34 +20,16 @@
 
     <p id ="menu_item"></p>
     <button onclick="getMenuItem()">Click here to enter menu_item!</button>
-
-
-    <script>
-      function getMenuItem() {
-        var response;
-        var menuEntry = prompt("Enter menu item: ", "Mushroom Flatbread");
-
-        if(menuEntry === null || menuEntry === ""){
-          response = "menuEntry was null or void";
-        } else {
-          response = "Did you order the " + menuEntry + "?";
-        }
-          document.getElementById("menu_item").innerHTML = response;
-      }
-
-      function getCustomerName() {
-        var response;
-        var custName = prompt("Enter menu item: ", "Mushroom Flatbread");
-
-        if(custName === null || custName === ""){
-          response = "menuEntry was null or void";
-        } else {
-          response = "Did you order the " + custName + "?";
-        }
-          document.getElementById("menu_item").innerHTML = response;
-      }
-
-    </script>
+    <p id ="custName"></p>
+    <button onclick="getCustomerName()">Click here to enter custName!</button>
+    <p id ="qty"></p>
+    <button onclick="getQty()">Click here to enter quantity!</button>
+    <p id ="comments"></p>
+    <button onclick="getComments()">Click here to add comments!</button>
+    <p id = "phoneNumber"></p>
+    <button onclick="getPhoneNumber()">Click here to enter your phone number!</button>
+    <p id = "sendOrder"></p>
+    <button onclick="sendOrder()">Click here when ready to send in order!</button>
 
 
 
